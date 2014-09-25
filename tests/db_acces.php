@@ -35,21 +35,21 @@ try
 	
 	while ($donnees = $req_aff->fetch())
 	{
-	?>
-	<p>
-	nom = <?php echo $donnees['atelier_nom']; ?><br />
-	theme = <?php echo $donnees['atelier_theme']; ?> <br />
-	type = <?php echo $donnees['atelier_type']; ?><br />
-	discipline = <?php echo $donnees['atelier_discipline'] ?><br />
-	resume = <?php echo $donnees['atelier_resume'] ?><br />
-	duree = <?php echo $donnees['atelier_duree'] ?><br />
-	capacite = <?php echo $donnees['atelier_capacite'] ?><br />
-	inscription = <?php echo $donnees['atelier_inscription'] ?><br />
-	laboratoire = <?php echo $donnees['atelier_laboratoire'] ?><br />
-	adresse = <?php echo $donnees['atelier_adresse'] ?><br />
-	zone = <?php echo $donnees['atelier_zone'] ?><br />
-	remarque = <?php echo $donnees['atelier_remarque'] ?><br />
-	<?php
+		?>
+		<p>
+		nom = <?php echo $donnees['atelier_nom']; ?><br />
+		theme = <?php echo $donnees['atelier_theme']; ?> <br />
+		type = <?php echo $donnees['atelier_type']; ?><br />
+		discipline = <?php echo $donnees['atelier_discipline'] ?><br />
+		resume = <?php echo $donnees['atelier_resume'] ?><br />
+		duree = <?php echo $donnees['atelier_duree'] ?><br />
+		capacite = <?php echo $donnees['atelier_capacite'] ?><br />
+		inscription = <?php echo $donnees['atelier_inscription'] ?><br />
+		laboratoire = <?php echo $donnees['atelier_laboratoire'] ?><br />
+		adresse = <?php echo $donnees['atelier_adresse'] ?><br />
+		zone = <?php echo $donnees['atelier_zone'] ?><br />
+		remarque = <?php echo $donnees['atelier_remarque'] ?><br />
+		<?php
 	}
 	$req_aff->closeCursor();
 }
