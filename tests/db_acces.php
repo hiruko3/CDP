@@ -16,7 +16,7 @@ catch(Exception $e)
 /*
 try
 {
-	$bdd->exec("INSERT INTO atelier(atelier_nom, atelier_theme, atelier_type, atelier_discipline, atelier_duree, atelier_capacite, atelier_inscription, atelier_laboratoire, atelier_adresse, atelier_zone, atelier_remarque) VALUES('Albert', 'astrophysique', 'un_autre_type', 'physique', '01:18:52', 2, 'sur réservation', 'un labo', 'bordeaux', 2, 'Romain est nul comme chef de projet, il croit que la base de données s appelle CNRS_Lemon')");
+	$bdd->exec("INSERT INTO atelier(atelier_nom, atelier_theme, atelier_type, atelier_discipline, atelier_duree, atelier_capacite, atelier_inscription, atelier_laboratoire, atelier_adresse, atelier_zone, atelier_remarques) VALUES('Albert', 'astrophysique', 'un_autre_type', 'physique', '01:18:52', 2, 'sur réservation', 'un labo', 'bordeaux', 2, 'Romain est nul comme chef de projet, il croit que la base de données s appelle CNRS_Lemon')");
 }
 catch(Exception $e)
 {
@@ -48,7 +48,7 @@ try
 	laboratoire = <?php echo $donnees['atelier_laboratoire'] ?><br />
 	adresse = <?php echo $donnees['atelier_adresse'] ?><br />
 	zone = <?php echo $donnees['atelier_zone'] ?><br />
-	remarque = <?php echo $donnees['atelier_remarque'] ?><br />
+	remarques = <?php echo $donnees['atelier_remarques'] ?><br />
 	<?php
 	}
 	$req_aff->closeCursor();
@@ -80,7 +80,6 @@ catch(Exception $e)
 
 <!-- test suppression -->
 <?php
-/*
 try
 {
 	$bdd->exec("DELETE FROM atelier WHERE atelier_nom = 'Albert'");
@@ -89,6 +88,6 @@ catch(Exception $e)
 {
 	die('Erreur : '.$e->getMessage());
 }
-*/
+	
 ?>
 <!-- -->
