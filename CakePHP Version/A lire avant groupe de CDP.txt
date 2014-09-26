@@ -1,0 +1,7 @@
+Mettre le Dossier website dans votre WAMP ou équivalent
+Ensuite modifier la BDD, dans la table atelier remplacer atelier_id par id
+Et modifier le fichier de configuraton bdd de CakePHP : \website\app\Config\database.php pour vous mettre dans votre configuration locale
+
+Voila, c'est pour vous montrer un peu comment le framework fonctionne, si vous voulez l'utiliser ou non.
+Vous pouvez toujours vous rendre sur la page d'accueil de CakePHP, pour ma part ça m'interesse carrément plus de travailler avec un framework, car en entreprise personne ne bosse sans framework.
+Ok il faut le prendre en main, mais ça évite de recoder pas mal de choses élémentaires.
