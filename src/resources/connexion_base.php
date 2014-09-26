@@ -2,7 +2,7 @@
 // Connexion à la base de données
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=CNRS_Lemon', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=cnrs_lemon', 'root', 'root');
 }
 catch(Exception $e)
 {

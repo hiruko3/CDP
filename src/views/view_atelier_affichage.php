@@ -34,9 +34,9 @@ foreach($atelier_display as $atelier)
     </p>
     <br/>
     <p>
-    	Remarque concernant l'atelier : <?php $atelier['atelier_remarque']
+    	Remarque concernant l'atelier : <?php $atelier['atelier_remarque']?>
     
-    <p>
+    </p>
     <?php echo $atelier['']; ?>
     <br />
     </p>
