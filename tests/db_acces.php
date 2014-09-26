@@ -1,18 +1,8 @@
-<?php
-// Connexion à la base de données
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=cnrs_lemon', 'root', '');
-}
-catch(Exception $e)
-{
-	die('Erreur : '.$e->getMessage());
-}
-?>
 
-
-<!-- test insertion -->
 <?php
+include_once("../src/resources/connexion_base.php");
+
+// test insertion
 /*
 try
 {
@@ -23,33 +13,28 @@ catch(Exception $e)
 	die('Erreur : '.$e->getMessage());
 }
 */
-?>
-<!-- -->
 
 
-<!-- test affichage -->
-<?php	
+// test affichage	
 try
 {
 	$req_aff = $bdd->query('SELECT * FROM atelier');
 	
 	while ($donnees = $req_aff->fetch())
 	{
-		?>
-		<p>
-		nom = <?php echo $donnees['atelier_nom']; ?><br />
-		theme = <?php echo $donnees['atelier_theme']; ?> <br />
-		type = <?php echo $donnees['atelier_type']; ?><br />
-		discipline = <?php echo $donnees['atelier_discipline'] ?><br />
-		resume = <?php echo $donnees['atelier_resume'] ?><br />
-		duree = <?php echo $donnees['atelier_duree'] ?><br />
-		capacite = <?php echo $donnees['atelier_capacite'] ?><br />
-		inscription = <?php echo $donnees['atelier_inscription'] ?><br />
-		laboratoire = <?php echo $donnees['atelier_laboratoire'] ?><br />
-		adresse = <?php echo $donnees['atelier_adresse'] ?><br />
-		zone = <?php echo $donnees['atelier_zone'] ?><br />
-		remarque = <?php echo $donnees['atelier_remarque'] ?><br />
-		<?php
+		echo "<p>";
+		echo "nom = " . $donnees['atelier_nom'] . "<br />";
+		echo "theme = " . $donnees['atelier_theme'] . "<br />";
+		echo "type = " . $donnees['atelier_type'] . "<br />";
+		echo "discipline = " . $donnees['atelier_discipline'] . "<br />";
+		echo "resume = " . $donnees['atelier_resume'] . "<br />";
+		echo "duree = " . $donnees['atelier_duree'] . "<br />";
+		echo "capacite = " . $donnees['atelier_capacite'] . "<br />";
+		echo "inscription = " . $donnees['atelier_inscription'] . "<br />";
+		echo "laboratoire = " . $donnees['atelier_laboratoire'] . "<br />";
+		echo "adresse = " . $donnees['atelier_adresse'] . "<br />";
+		echo "zone = " . $donnees['atelier_zone'] . "<br />";
+		echo "remarque = " . $donnees['atelier_remarque'] . "<br />";
 	}
 	$req_aff->closeCursor();
 }
@@ -57,13 +42,10 @@ catch(Exception $e)
 {
 	die('Erreur : '.$e->getMessage());
 }
-?>
-</p>
-<!-- -->
+echo "</p>";
 
 
-<!-- test modification -->
-<?php
+// test modification
 /*
 try
 {
@@ -74,12 +56,9 @@ catch(Exception $e)
 	die('Erreur : ' . $e->getMessage());
 }
 */
-?>
-<!-- -->
 
 
-<!-- test suppression -->
-<?php
+// test suppression
 /*
 try
 {
@@ -91,4 +70,3 @@ catch(Exception $e)
 }
 */
 ?>
-<!-- -->
