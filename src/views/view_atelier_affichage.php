@@ -7,7 +7,7 @@
     </head>
         
     <body>
-        <h1>Bienvenur sur la page d'affichage des ateliers !</h1>
+        <h1>Bienvenue sur la page d'affichage des ateliers !</h1>
         <p>Atelier à afficher :</p>
  
 
