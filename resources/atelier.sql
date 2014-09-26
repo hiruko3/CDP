@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 26 Septembre 2014 à 17:22
+-- Généré le :  Ven 26 Septembre 2014 à 20:17
 -- Version du serveur :  5.6.20
 -- Version de PHP :  5.5.15
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `atelier` (
   `atelier_adresse` varchar(200) NOT NULL,
   `atelier_zone` tinyint(4) unsigned NOT NULL,
   `atelier_remarque` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Contenu de la table `atelier`
@@ -69,7 +69,7 @@ ALTER TABLE `atelier`
 -- AUTO_INCREMENT pour la table `atelier`
 --
 ALTER TABLE `atelier`
-MODIFY `atelier_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `atelier_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
