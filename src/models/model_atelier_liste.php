@@ -3,6 +3,8 @@
 function atelier_db_to_obj($data)
 {
 	$a = new Atelier($data['atelier_id'], $data['atelier_nom'], $data['atelier_theme'], $data['atelier_type'], $data['atelier_discipline'], $data['atelier_resume'], $data['atelier_duree'], $data['atelier_capacite'], $data['atelier_inscription'], $data['atelier_laboratoire'], $data['atelier_adresse'], $data['atelier_zone'], $data['atelier_remarque']);
+	
+	return $a;
 }
 
 /* fonction qui recupere les ateliers */
