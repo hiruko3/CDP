@@ -35,11 +35,6 @@ foreach($atelier_display as $atelier)
     <br/>
     <p>
     	Remarque concernant l'atelier : <?php $atelier['atelier_remarque']?>
-    
-    </p>
-    <?php echo $atelier['']; ?>
-    <br />
-    </p>
 </div>
 <?php
 }

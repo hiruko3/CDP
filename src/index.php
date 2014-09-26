@@ -1,6 +1,6 @@
 <?php
 
-include_once("resources/connexion_base.php");
+require_once("resources/connexion_base.php");
 global $bdd;
 //On démarre la session
 session_start();
