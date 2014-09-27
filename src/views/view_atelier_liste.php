@@ -23,11 +23,6 @@
 						echo "<td>" . $a->get_type() . "</td>";
 						echo "<td>" . $a->get_discipline() . "</td>";
 					echo "</tr>";
-
-				/*<b> Thème : <?php echo $atelier['atelier_theme']; ?></b>
-				<em>Type : <?php echo $atelier['atelier_type']; ?></em>
-				<em>Discipline : <?php echo $atelier['atelier_discipline']; ?></em>
-				<em>Capacité : <?php echo $atelier['atelier_capacite']; ?></em>*/
 				}
 			?>
 		</table>
