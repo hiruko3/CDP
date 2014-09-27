@@ -40,5 +40,9 @@
 		public function prepare($prepare){
 			return $this->PDOInstance->prepare($prepare);
 		}
+
+		public function exec($exec){
+			return $this->PDOInstance->exec($exec);
+		}
 	}
 ?>
