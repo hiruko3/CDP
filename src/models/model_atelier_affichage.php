@@ -13,3 +13,4 @@
 		return $atelier_display;
 		
 	}	
+?>
