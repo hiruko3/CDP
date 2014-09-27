@@ -1,7 +1,7 @@
 <?php
 
-require_once("resources/connexion_base.php");
-global $bdd;
+require_once("resources/connexion_base_singleton.php");
+
 //On démarre la session
 session_start();
 
