@@ -1,3 +1,4 @@
 htmlspecialchars dans la classe et non dans les modeles
 utilisation systematique de la classe
 accents ne passent pas dans la view depuis la DB ??
+utilisation de PDO pour les tests base
