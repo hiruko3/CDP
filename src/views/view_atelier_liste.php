@@ -26,5 +26,6 @@
 				}
 			?>
 		</table>
+		<a href = ../views/view_atelier_creation.php>cr&eacute;er un nouvel atelier</a>
 	</body>
 </html>
