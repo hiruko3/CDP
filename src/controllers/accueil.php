@@ -9,6 +9,6 @@
     <body>
         <h1>Bienvenue sur la page d'affichage des ateliers !</h1>
         <p>Atelier à afficher :</p>
-    <a HREF = "controllers/controller_atelier_affichage.php"> "Affichage atelier" </a>
+    <a HREF = "controllers/controller_atelier_liste.php"> "Affichage atelier" </a>
 </body>
 </html>
