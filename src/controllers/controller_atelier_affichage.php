@@ -1,6 +1,6 @@
 <?php
 /* include model*/
-include_once("../resources/connexion_base.php");
+include_once("../resources/connexion_base_singleton.php");
 global $bdd;
 //traitement des données
 include_once('../models/model_atelier_affichage.php');
