@@ -1,12 +1,10 @@
 <?php
 /* include model*/
-include_once("../resources/connexion_base_singleton.php");
-global $bdd;
 //traitement des données
 include_once('../models/model_atelier_affichage.php');
 
 if(!empty($_GET['id'])){
-	$atelier_display = get_atelier($_GET['id'],$bdd);	
+	$atelier_display = get_atelier($_GET['id']);	
 
 
     foreach ($atelier_display as $cle => $atelier)
