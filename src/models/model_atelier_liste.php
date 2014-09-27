@@ -8,13 +8,13 @@ function atelier_db_to_obj($data)
 }
 
 /* fonction qui recupere les ateliers */
-function get_liste_atelier($bdd)
+function get_liste_atelier()
 {
 	try
 	{
 		$t_atelier = array();
 		$i = 0;
-		$req = $bdd->query('SELECT * FROM atelier');
+		$req = PDO_Singleton::getInstance()->query('SELECT * FROM atelier');
 	
 		while($donnees = $req->fetch())
 		{

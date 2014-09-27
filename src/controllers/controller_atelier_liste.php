@@ -1,8 +1,8 @@
 <?php
-include_once("../resources/connexion_base.php");
+include_once("../resources/connexion_base_singleton.php");
 include_once('../models/model_atelier_liste.php');
 
-$ateliers = get_liste_atelier($bdd);
+$ateliers = get_liste_atelier();
 
 foreach($ateliers as $i => $a)
 {
