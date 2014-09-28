@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<link rel = "stylesheet" href = "../css/style_global.css" />
+		<link rel = "stylesheet" href = "../css/style_atelier_affichage.css" />
         <meta charset="utf-8" />
         <title>CNRS_Website</title>
-	<link href="src/css/style.css" rel="stylesheet" /> 
     </head>
         
     <body>
@@ -39,5 +40,6 @@ foreach($atelier_display as $atelier)
 <?php
 }
 ?>
+<a href = "../controllers/controller_atelier_liste.php">Revenir &agrave; la liste des ateliers</a>
 </body>
 </html>
