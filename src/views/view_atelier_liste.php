@@ -29,8 +29,8 @@ session_start();
 							echo "<td>" . $a->get_theme() . "</td>";
 							echo "<td>" . $a->get_type() . "</td>";
 							echo "<td>" . $a->get_discipline() . "</td>";
-							echo "<td><a href = controller_atelier_modification.php?id=" . $a->get_id() . ">modifier</a></td>";
-							echo "<td><a href = controller_atelier_suppression.php?id=" . $a->get_id() . ">supprimer</a></td>";
+							echo "<td><a href = ../views/view_atelier_modification.php?id=" . $a->get_id() . ">modifier</a></td>";
+							echo "<td><a href = ../controllers/controller_atelier_suppression.php?id=" . $a->get_id() . ">supprimer</a></td>";
 						echo "</tr>";
 						
 						$_SESSION['ateliers'][$a->get_id()] = serialize($a); // insertion de l atelier dans une variable de session (table hash avec id en cle)

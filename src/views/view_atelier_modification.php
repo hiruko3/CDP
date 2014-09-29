@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once("../resources/Atelier.php");
 
 if(ISSET($_SESSION['ateliers']))
 {
@@ -16,7 +17,7 @@ if(ISSET($_SESSION['ateliers']))
 	</head>
 	<body>
 		<h1>Saisie d'un nouvel atelier</h1>
-		<form action="../controllers/controller_atelier_modification.php" method="post">
+		<?php echo '<form action="../controllers/controller_atelier_modification.php?id=' . $a->get_id() . '" method="post">'; ?>
 			<fieldset>
 				<legend>atelier</legend>
 				<label for="nom" class="inline">titre</label>
