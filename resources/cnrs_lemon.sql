@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 26 Septembre 2014 à 20:17
+-- Généré le :  Lun 29 Septembre 2014 à 18:18
 -- Version du serveur :  5.6.20
 -- Version de PHP :  5.5.15
 
@@ -38,18 +38,24 @@ CREATE TABLE IF NOT EXISTS `atelier` (
   `atelier_inscription` varchar(50) NOT NULL,
   `atelier_laboratoire` varchar(150) NOT NULL,
   `atelier_adresse` varchar(200) NOT NULL,
-  `atelier_zone` tinyint(4) unsigned NOT NULL,
+  `atelier_zone` tinytext NOT NULL,
   `atelier_remarque` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
 
 --
 -- Contenu de la table `atelier`
 --
 
 INSERT INTO `atelier` (`atelier_id`, `atelier_nom`, `atelier_theme`, `atelier_type`, `atelier_discipline`, `atelier_resume`, `atelier_duree`, `atelier_capacite`, `atelier_inscription`, `atelier_laboratoire`, `atelier_adresse`, `atelier_zone`, `atelier_remarque`) VALUES
-(1, 'nom d''atelier', 'thème', 'type', 'discipline', 'je suis un résumé', '00:30:00', 20, 'aucune', 'LABRI', 'fac', 0, NULL),
-(4, 'xd', 'poissons', 'type', 'histoire', 'Les poissons savent nager.', '03:10:05', 57, 'Sur réservation', 'LABRI', 'fac', 2, 'je sais pas'),
-(5, 'ananas', 'fruits', 'plantes', 'biologie', 'Les ananas ne poussent pas sur les pommiers.', '00:12:00', 5, 'aucune', 'un_labo', 'bordeaux', 1, NULL);
+(1, 'nom d''atelier', 'theme', 'type', 'discipline', 'je suis un résumé', '00:30:00', 20, 'no', 'LABRI', 'fac', 'a', NULL),
+(4, 'xd', 'poissons', 'type', 'histoire', 'Les poissons savent nager.', '03:10:05', 57, 'no', 'LABRI', 'fac', 'b', 'je sais pas'),
+(5, 'ananas', 'fruits', 'plantes', 'biologie', 'Les ananas ne poussent pas sur les pommiers.', '00:12:00', 5, 'no', 'un_labo', 'bordeaux', 'a', NULL),
+(14, 'nom', 'theme', 'type', 'discipline', 'resume', '01:20:00', 12, 'mail', 'labo', 'adresse', 'c', 'remarque'),
+(69, 'test', 'test', 'test', 'test', 'un test.', '01:30:00', 40, 'tel', 'test', 'test', 'd', 'test'),
+(73, 'chips', 'les chips', 'nourriture', 'gastronomie', 'Crac', '00:20:00', 5, 'lettre', 'INRIA', 'ailleurs', 'b', 'Les chips, ça déchire !'),
+(75, 'conduite', 'cours', 'master', 'informatique', 'conduire des projets informatiques.', '15:00:00', 100, 'lettre', 'A29', 'A29BIS', 'a', 'Ceci est une remarque contenant 8 caractÃ¨res spÃ©ciaux pour tester : Ã©Ã¨Ã @Ã®Ã¤.'),
+(76, 'star wars', 'jedi', 'SciFi', 'glande', 'Pas besoin, tout le monde connaÃ®t.', '23:37:00', 500, 'no', 'cinÃ©ma', 'gaumont - forum', 'b', 'C''est le meilleur des ateliers !'),
+(78, 'star', 'jedi', 'SciFi', 'glande', 'Pas besoin, tout le monde connaÃ®t.', '23:37:00', 500, 'no', 'cinÃ©ma', 'gaumont', 'b', 'C''est le meilleur des ateliers !');
 
 --
 -- Index pour les tables exportées
@@ -69,7 +75,7 @@ ALTER TABLE `atelier`
 -- AUTO_INCREMENT pour la table `atelier`
 --
 ALTER TABLE `atelier`
-MODIFY `atelier_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `atelier_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
