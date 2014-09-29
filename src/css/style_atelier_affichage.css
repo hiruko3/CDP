@@ -1,0 +1,23 @@
+* /* all */
+{
+	background-color:#fafafa;
+}
+
+body * /* toutes les balises du body */
+{
+	display:block;
+	margin-top:20px;
+}
+
+h2
+{
+
+}
+
+.nom_atelier /* class nom_atelier */
+{
+	font-weight:900;
+	font-size:36px;
+	text-transform:uppercase;
+	letter-spacing:10px;
+}

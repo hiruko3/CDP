@@ -1,0 +1,67 @@
+form
+{
+	margin-right:auto;
+	margin-left:auto;
+	background-color:#fafafa;
+	padding:10px;
+	width:30%;
+}
+
+fieldset
+{
+	padding:0 20px 20px 20px;
+	margin-bottom:10px;
+	border:1px solid #aad4ff;
+}
+
+legend
+{
+	color:#007fff;
+	font-weight:bold
+}
+
+label
+{
+	margin-top:10px;
+	display:block;
+}
+
+label.inline
+{
+	display:inline;
+	margin-right:50px;
+}
+
+input, textarea, select, option
+{
+	background-color:#FAFAFA;
+}
+
+input, textarea, select
+{
+	padding:3px;
+	border:1px solid #aad4ff;
+	border-radius:5px;
+	width:200px;
+	box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+select
+{
+	margin-top:10px;
+}
+
+/*input[type=radio]
+{
+	background-color:transparent;
+	border:none;
+	width:10px;
+}*/
+
+input[type=submit], input[type=reset]
+{
+	width:100px;
+	margin-left:5px;
+	box-shadow:1px 1px 1px #aad4ff;
+	cursor:pointer;
+}

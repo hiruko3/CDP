@@ -1,0 +1,25 @@
+/* page */
+*
+{
+	margin-left:0%;
+	text-align:center;
+	color:#000;
+}
+
+body
+{
+	font-family:"trebuchet ms",sans-serif;
+	font-size:90%;
+}
+
+a /* liens */
+{
+	color:#000;
+}
+
+a:hover /* survol des liens */
+{
+	background-color:#fafafa;
+	color:#00f;
+}
+/* fin page */

@@ -1,0 +1,126 @@
+/* tableau */
+.tableAteliers /* global */
+{
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	width:35%;
+	border:1px solid #ffffff;
+	
+	-moz-border-radius-bottomleft:14px;
+	-webkit-border-bottom-left-radius:14px;
+	border-bottom-left-radius:14px;
+	
+	-moz-border-radius-bottomright:14px;
+	-webkit-border-bottom-right-radius:14px;
+	border-bottom-right-radius:14px;
+	
+	-moz-border-radius-topright:14px;
+	-webkit-border-top-right-radius:14px;
+	border-top-right-radius:14px;
+	
+	-moz-border-radius-topleft:14px;
+	-webkit-border-top-left-radius:14px;
+	border-top-left-radius:14px;
+}
+
+.tableAteliers table /* table */
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.tableAteliers tr:last-child td:last-child /* derniere ligne / derniere cellule */
+{
+	-moz-border-radius-bottomright:14px;
+	-webkit-border-bottom-right-radius:14px;
+	border-bottom-right-radius:14px;
+}
+.tableAteliers table tr th:first-child /* ligne titre / premiere cellule */
+{
+	-moz-border-radius-topleft:14px;
+	-webkit-border-top-left-radius:14px;
+	border-top-left-radius:14px;
+}
+
+.tableAteliers table tr th:last-child /* ligne titre / derniere cellule */
+{
+	-moz-border-radius-topright:14px;
+	-webkit-border-top-right-radius:14px;
+	border-top-right-radius:14px;
+}
+
+.tableAteliers tr:last-child td:first-child /* derniere ligne / premiere cellule */
+{
+	-moz-border-radius-bottomleft:14px;
+	-webkit-border-bottom-left-radius:14px;
+	border-bottom-left-radius:14px;
+}
+
+.tableAteliers td, th /* toutes les cellules, y compris titre */
+{
+	vertical-align:middle;
+	background:-o-linear-gradient(bottom, #ffffff 5%, #aad4ff 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #aad4ff) ); 
+	background:-moz-linear-gradient( center top, #ffffff 5%, #aad4ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#aad4ff");
+	background: -o-linear-gradient(top,#ffffff,aad4ff);
+
+	background-color:#ffffff;
+
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:7px;
+	font-size:15px;
+	font-family:Comic Sans MS;
+	font-weight:normal;
+	color:#000000;
+}
+.tableAteliers tr:last-child td /* toutes les cellules de la derniere ligne */
+{
+	border-width:0px 1px 0px 0px;
+}
+
+.tableAteliers tr td:last-child /* derniere cellule de chaque ligne */
+{
+	border-width:0px 0px 1px 0px;
+}
+
+.tableAteliers tr:last-child td:last-child /* derniere cellule de la derniere ligne */
+{
+	border-width:0px 0px 0px 0px;
+}
+
+.tableAteliers tr th /* cellules de titre */
+{
+	background:-o-linear-gradient(bottom, #aad4ff 5%, #007fff 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #aad4ff), color-stop(1, #007fff) );
+	background:-moz-linear-gradient( center top, #aad4ff 5%, #007fff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#aad4ff", endColorstr="#007fff");
+	background: -o-linear-gradient(top,#aad4ff,007fff);
+
+	background-color:#aad4ff;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:16px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#000000;
+}
+
+.tableAteliers tr th:first-child /* preliere cellule de titre d une ligne */
+{
+	border-width:0px 0px 1px 0px;
+}
+
+.tableAteliers tr th:last-child /* derniere cellule de titre d une ligne */
+{
+	border-width:0px 0px 1px 1px;
+}
+/* fin tableau */
