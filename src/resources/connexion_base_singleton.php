@@ -11,13 +11,12 @@
 		const DEFAULT_SQL_HOST = 'localhost';
 
 		/* if you are using MAMP you need to write 'root' as PASS*/
-		const DEFAULT_SQL_PASS = '';
+		const DEFAULT_SQL_PASS = 'root';
 		const DEFAULT_SQL_DB = 'cnrs_lemon';
 
 		private function PDO_Singleton(){
 			try{
-				$this->PDOInstance = new PDO('mysql:host=localhost;dbname=cnrs_lemon', 'root', '');
-				/*PDO('mysql:host='.self::DEFAULT_SQL_HOST.';dbname='.self::DEFAULT_SQL_DB,self::DEFAUTL_SQL_USER,self::DEFAULT_SQL_PASS);*/
+				$this->PDOInstance = new PDO('mysql:host='.self::DEFAULT_SQL_HOST.';dbname='.self::DEFAULT_SQL_DB,self::DEFAUTL_SQL_USER,self::DEFAULT_SQL_PASS);
 			}
 			catch(Exception $e)
 			{
