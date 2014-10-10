@@ -1,5 +1,5 @@
 <?php
-class Example extends PHPUnit_Extensions_SeleniumTestCase
+class Supression_atelier_test extends PHPUnit_Extensions_SeleniumTestCase
 {
   protected function setUp()
   {
