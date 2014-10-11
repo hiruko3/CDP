@@ -32,11 +32,11 @@
 			</h3>
 			<p>
 				Résumé de l'atelier : <?php echo $atelier['atelier_resume']; ?>
+				<br/>
+				Remarque concernant l'atelier : <?php echo $atelier['atelier_remarque']?>
+
 			</p>
 			<br/>
-			<p>
-				Remarque concernant l'atelier : <?php $atelier['atelier_remarque']?>
-			</p>
 		</div>
 		<?php
 			}
