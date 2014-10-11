@@ -25,7 +25,7 @@ session_start();
 					foreach($ateliers as $a)
 					{
 						echo "<tr>";
-							echo "<td><a href = controller_atelier_affichage.php?id=" . $a->get_id() . ">" . $a->get_nom() . "</a></td>";
+							echo "<td><a href = controller_atelier_affichage.php?id=" . $a->get_id() . " id='" . $a->get_nom() . "'>" . $a->get_nom() . "</a></td>";
 							echo "<td>" . $a->get_theme() . "</td>";
 							echo "<td>" . $a->get_type() . "</td>";
 							echo "<td>" . $a->get_discipline() . "</td>";
