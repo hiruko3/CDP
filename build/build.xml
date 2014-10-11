@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="Site_CNRS" basedir="." default="build">
+ <target name="clean">
+  <delete dir="report"/>
+ </target> 
+ 
+ <target name="prepare">
+  <mkdir dir="report"/>
+ </target> 
+  <target name="phpunit">
+    <phpunit haltonfailure="true" haltonerror="true"
+    printsummary="true" 
+    pharlocation="/usr/local/bin/phpunit">
+    <formatter todir="report" type="xml" outfile="phpunit-results.xml" />
+    <batchtest>
+      <fileset dir="../tests/testSelenium">
+        <include name="*Test.php"/>
+      </fileset>
+    </batchtest>
+  </phpunit>
+   <phpunitreport infile="report/phpunit-results.xml" 
+     format="frames" 
+     todir="report" />
+ </target> 
+ 
+ <target name="build" depends="clean,prepare,phpunit"/>
+</project>
