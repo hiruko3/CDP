@@ -12,5 +12,8 @@
 
 	$a = new Atelier(0, $_POST['nom'], $_POST['theme'], $_POST['type'], $_POST['discipline'], $_POST['resume'], $_POST['duree'], $_POST['capacite'], $_POST['inscription'], $_POST['labo'], $_POST['adresse'], $_POST['zone'], $_POST['remarque']);
 	set_atelier($a);
+	
+	
+	echo "<a href = '../controllers/controller_atelier_liste.php'>Revenir &agrave; la liste des ateliers</a>";
 	header('Location: ../controllers/controller_atelier_liste.php');
 ?>
