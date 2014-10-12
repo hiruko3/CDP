@@ -8,7 +8,6 @@ if(ISSET($_SESSION['ateliers'])) { $a = unserialize($_SESSION['ateliers'][$_GET[
 /* modifications */
 $champs = array();
 $exe = array();
-//$_POST['duree'] .= ':00'; // adaptation du format a la bdd (avec secondes)////////////////////////////////////////
 	
 if($_POST['nom'] != $a->get_nom())
 {
@@ -52,7 +51,7 @@ if($_POST['inscription'] != $a->get_inscription())
 }
 if($_POST['labo'] != $a->get_labo())
 {
-	$champs[] = "labo";
+	$champs[] = "laboratoire";
 	$exe[] = $_POST['labo'];
 }
 if($_POST['adresse'] != $a->get_adresse())

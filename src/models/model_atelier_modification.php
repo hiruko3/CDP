@@ -18,13 +18,7 @@ function update_atelier($id, $champs, $values)
 		$req = PDO_Singleton::getInstance()->prepare($r);
 		$req->execute($values);
 		
-		
-		
 		$req->closeCursor();
-		echo $r;
-		echo "<br />";
-		foreach($values as $v)
-		{ echo $v . "<br />"; }
 	}
 	catch(Exception $e)
 	{

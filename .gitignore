@@ -1,1 +1,2 @@
 src/resources/connexion_base.php
+src/resources/connexion_base_singleton.php
