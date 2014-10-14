@@ -11,7 +11,7 @@
 		const DEFAULT_SQL_HOST = 'localhost';
 
 		/* if you are using MAMP you need to write 'root' as PASS*/
-		const DEFAULT_SQL_PASS = 'root';
+		const DEFAULT_SQL_PASS = '';
 		const DEFAULT_SQL_DB = 'cnrs_lemon';
 
 		private function PDO_Singleton(){
