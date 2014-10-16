@@ -1,36 +1,46 @@
 \chapter{Cahier des charges}
+%%%%%%%%%%%%%%%%% organisation des r\'epertoires ???????,
 \section{Sp\'ecifications fonctionnelles}
-\subsection{Gestion des acce\`es}
-?????????????????????????????????????
+
+\subsection{Acc\`es}
+\begin{itemize}
+\item gestion inscription / login / logout / configuration de compte (options, suppression, ...) ;
+\item seuls les membres inscrits peuvent \^etre ajout\'es comme contributeurs / watchers (voir : \ref{contributeur});
+\item seuls les contributeurs d'un projet peuvent modifier le projet ;
+\item seuls les watchers peuvent voir un projet priv\'e (voir : \ref{projet_prive}) ;
+\item tout le monde (y compris les visiteurs non enregistr\'es) peut voir les projets publics.
+\end{itemize}
+
 \subsection{Projets}
 \begin{itemize}
-\item cr\'eation de projets ;
-\item ajout de contributeurs \`a un projet ;
+\item cr\'eation / suppression de projets (publics / priv\'es)\label{projet_prive} ;
+\item ajout de contributeurs \`a un projet\label{contributeur} ;
 \item avoir un statut (modifiable) pour chaque contributeur :
 \begin{itemize}
 \item d\'eveloppeur (statut par d\'efaut) ;
-\item scrum master ;
-\item product owner .
+\item scrum master (1 par projet) ;
+\item product owner (1 par projet).
 \end{itemize}
 \item ajout de \og{}watchers\fg{} au projet ;
-\item \'eventuellement, g\'erer des acc\`es pour limiter la visibilit\'e des \og{}watchers\fg{}. (statuts ?)
+\item \'eventuellement, g\'erer des acc\`es pour limiter la visibilit\'e des \og{}watchers\fg{} \textcolor{red}{(statuts ?)}.
 \end{itemize}
+
 \subsection{Organisation - planning}
 \begin{itemize}
-\item cr\'eation et affichage d'un planning des sprints\label{sprint} ;outils pour aider creation ?????????????????????????????????????????????????????
+\item cr\'eation et affichage d'un planning des sprints\label{sprint} \textcolor{red}{(id\'ees d'outils pour aider \`a la cr\'eation ?)} ;
 \item diagramme de PERT initial (possible de le g\'en\'erer automatiquement avec le backlog pond\'er\'e ?) ;
 \item (diagramme de PERT mis \`a jour automatiquement en fonction de l'avancement du projet) ;
-\item mise \`a jour automatique des d\^ates estim\'ees de fin de t\^aches / US en fonction de l'avanc\'ee du PERT(\label{maj_dates_estimees}) ;
+\item mise \`a jour automatique des dates estim\'ees de fin de t\^aches / US en fonction de l'avanc\'ee du PERT\label{maj_dates_estimees} ;
 \item diagramme de GANTT initial (possible d'avoir un outil pour faciliter la cr\'eation ?) ;
 \item diagramme de GANTT mis \`a jour en fonction de l'organisation r\'eelle du projet (MAJ manuelle) ;
-\item gestion des versions. ??????????????????
-%Quand la version v a t-elle été créée ?
+\item cr\'eation d'un planning th\'eorique des versions (date, contenu) ;
+\item planning r\'eel des versions (auto-g\'en\'er\'e \`a partir des commits ?).
 \end{itemize}
-SPRINTS ???????????????????????????????????????????????????????????
+
 \subsection{US}
 \begin{itemize}
 \item cr\'eation d'user stories ;
-\item affichage des co\^uts totaux des t\^aches (voir : \ref{tache}) de chaque US (mise \`a jour \`a chaque modification de co\^ut des t\^aches) ;
+\item affichage des co\^uts totaux des t\^aches (voir : \ref{tache}) de chaque US (MAJ auto) ;
 \item cr\'eation d'un statut pour chaque US :
 \begin{itemize}
 \item not validated (pas encore une exigence) ;
@@ -46,11 +56,13 @@ SPRINTS ???????????????????????????????????????????????????????????
 \item affichage de la date estim\'ee de fin d'US (voir : \ref{maj_dates_estimees});
 \item g\'en\'eration automatique d'un burn down chart \`a la fin de chaque sprint (voir : \ref{sprint}).
 \end{itemize}
+
 \subsection{T\^aches}
 \begin{itemize}
 \item cr\'eation de t\^aches\label{tache} ;
 \item ajout des t\^aches aux US (une t\^ache peut appartenir \`a plusieurs US);
 \item gestion des co\^uts (suite de fibonacci visible pendant le calcul des co\^uts) ;
+\item \`a chaque modification de co\^ut, MAJ automatique du co\^ut de toutes les US dont d\'epend la t\^ache ;
 \item possibilit\'e pour tous les contributeurs d'attribuer un d\'eveloppeur \`a une t\^ache ;
 \item  cr\'eation d'un statut pour chaque t\^ache :
 \begin{itemize}
@@ -63,13 +75,68 @@ SPRINTS ???????????????????????????????????????????????????????????
 \item filtrage des t\^aches sur statut ;
 \item filtrage des t\^aches sur dev ;
 \item affichage de la date estim\'ee de fin de t\^ache (voir : \ref{maj_dates_estimees});
-\item possibilit\'e d'afficher facilement la liste des US dont d\'epend chaque t\^aches.
+\item possibilit\'e d'afficher facilement la liste des US dont d\'epend chaque t\^aches ;
+\item possibilit\'e d'acc\'eder au(x) test(s) d'un t\^ache (lien vers la page de test : voir \ref{test}).
 \end{itemize}
+
 \subsection{Tests}
-??????????????????
-%Quand le test t a t-il été exécuté ?
+Cr\'eation d'une page \og{}tests\fg{}\label{test} sur laquelle on trouvera 3 cat\'egories :
+\begin{itemize}
+\item les tests unitaires ;
+\item les tests d'int\'egration ;
+\item les tests de validation.
+\end{itemize}
+Pour chaque test, on pourra visualiser facilement :
+\begin{itemize}
+\item le nom du d\'eveloppeur ;
+\item la date de cr\'eation ;
+\item la date de derni\`ere ex\'ecution ;
+\item le nom de celui qui a ex\'ecut\'e la derni\`ere fois ;
+\item le r\'esultat de la derni\`ere ex\'ecution.
+\end{itemize}
+Il sera \'egalement possible de faire appara\^itre toutes les ex\'ecutions avec, pour chacune :
+\begin{itemize}
+\item dates ;
+\item nom du contributeur qui a ex\'ecut\'e ;
+\item r\'esultat.
+\end{itemize}
+
+\subsection{Versions}
+Cr\'eation d'une page \og{}versions\fg{} sur laquelle on trouvera l'historique de toutes les versions avec, pour chacune :
+\begin{itemize}
+\item date ;
+\item contenu (US termin\'ees) ;
+\item \'eventuels bugs / probl\`emes connus (modifiable \`a tout moment par les contributeurs).
+\end{itemize}
+
+\subsection{D\'eveloppeur}
+Cr\'eation d'une page \og{}d\'eveloppeur\fg{} sur laquelle on retrouvera :
+\begin{itemize}
+\item les t\^aches \`a effectuer / en cours / effectu\'ees ;
+\item les tests \'ecrits / d\'evelopp\'es ;
+\item les tests execut\'es ;
+\item l'emploi du temps du d\'eveloppeur au cours du projet (th\'eorique et r\'eel).
+\end{itemize}
+
 \subsection{Accessibilit\'e du code}
-GIT ?????????????????????
+Il sera possible de rentrer l'URL du git du projet. \`A partir de l\`a, \`a chaque r\'ef\'erence au code, on pourra t\'el\'echarger le / les fichier(s) correspondant(s). On retrouvera donc le code dans les pages :
+\begin{itemize}
+\item US (toute une US) ;
+\item t\^ache (les fichiers d'une t\^ache) ;
+\item test (les fichiers d'un test) ;
+\item version (une version compl\`ete) ;
+\item d\'eveloppeur (dans la liste des t\^aches d'un d\'eveloppeur, acc\`es au code de chacune des t\^aches) ;
+\end{itemize}
+
+\subsection{Outils}
+Cr\'eation d'une page de type wiki contenant la liste de tous les environnements et outils utilis\'es et pour chacun :
+\begin{itemize}
+\item une description de leur utilisation g\'en\'erale ;
+\item une description de leur utilisation pour le projet ;
+\item un lien de t\'el\'echargement ;
+\item un tuto d'installations ;
+\item un tuto de configuration.
+\end{itemize}
 
 \section{Sp\'ecifications non-fonctionnelles}
 \begin{itemize}
