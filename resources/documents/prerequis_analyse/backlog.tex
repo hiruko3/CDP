@@ -1,1 +1,177 @@
 \chapter{Backlog}
+%à é è " " ê â î ô à
+Droits : contributeurs > watchers > utilisateurs enregistr\'es > visiteur => un watcher \`a au moins les m\^emes droits qu'un visiteur.\\
+\begin{tabular}{|p{4.2cm}|p{5cm}|p{5cm}|}
+\hline
+En tant que ... & je souhaite ... & afin de ... \\
+\hline
+visiteur & m'enregistrer et me logger & \\
+utilisateur enregistr\'e & modifier mes informations et me d\'econnecter & \\
+utilisateur enregistr\'e & pouvoir contribuer \`a plusieurs projets  & \\
+utilisateur enregistr\'e & demander \`a rejoindre un projet & \^etre accept\'e par un contributeur de devenir moi m\^eme contributeur \\
+contributeur & envoyer une invitation \`a un utilisateur enregistr\'e & lui permettre de valider de de devenir contributeur \\
+contributeur & modifier n'importe quelle information de mon projet & faire avancer le projet \\
+utilisateur enregistr\'e & demander \`a voir un projet & \^etre accept\'e par un contributeur de devenir watcher \\
+contributeur & envoyer une invitation \`a un utilisateur enregistr\'e & lui permettre de valider de de devenir watcher \\
+watcher & voir n'importe quelle information du projet & \\
+visiteur & voir n'importe quelle information d'un projet public & \\
+utilisateur enregistr\'e & cr\'eer un projet public ou priv\'e & \\
+contributeur & supprimer mon projet & \\
+contributeur & modifier le statut d'un contributeur (d\'eveloppeur, product owner ou scrum master) & d\'efinir des r\^oles au sein du projet \\
+(contributeur & \'eventuellement pouvoir modifier les droits des watchers & maintenir la confidentialit\'e de certaines parties de mon projet) \\
+contributeur & cr\'eer un planning des sprints & organiser l'avancement du projet \\
+(contributeur & \'eventuellement disposer d'outils pour faciliter la cr\'eation d'un planning des sprints &) \\
+watcher & afficher le planning des sprints & \\
+contributeur & cr\'eer un diagramme de PERT initial & \\
+(contributeur & qu'un diagramme de PERT initial soit g\'en\'er\'e automatiquement \`a partir de mon backlog pond\'er\'e &) \\
+watcher & afficher le diagramme de PERT initial du projet & \\
+contributeur & cr\'eer et mettre manuellement \`a jour n'importe quand un diagramme de PERT r\'eel du projet (avancement dans la pratique) & \\
+(contributeur & qu'un diagramme de PERT r\'eel soit g\'en\'er\'e automatiquement \`a partir du PERT initial et de l'avancement r\'eel du projet & ) \\
+(contributeur & afficher les diff\'erences entre les diagrammes de PERT initial et r\'eel & me r\'eajuster l'organisation du projet) \\
+watcher & afficher le diagramme de PERT r\'eel du projet & \\
+contributeur & cr\'eer un diagramme de GANTT initial & \\
+(contributeur & avoir un outil qui me propose plusieurs organisations possibles pour mon GANTT initial & ) \\
+watcher & afficher le diagramme de GANTT initil du projet & \\
+contributeur & cr\'eer et mettre manuellement \`a jour n'importe quand un diagramme de GANTT r\'eel & \\
+(contributeur & avoir un outil qui me propose plusieurs r\'e-organisations possibles pour mon GANTT r\'eel & ) \\
+watcher & afficher le diagramme de GANTT r\'eel du projet & \\
+contributeur & cr\'eer un planning th\'eorique des versions (dates, contenu) & \\
+watcher & afficher le planning th\'eorique des versions & \\
+contributeur & cr\'eer et mettre manuellement \`a jour n'importe quand un planning r\'eel des versions & \\
+(contributeur & que le planning r\'eel des versions soit mis \`a jour automatiquement (\`a partir des commits ?) & ) \\
+watcher & afficher le planning r\'eel des versions & \\
+
+
+
+
+
+%watcher & voir les dates de fin d'US initiales et révisées dans la page \og{}US\fg{} & \\
+%watcher & que les dates de fin d'US révisées dans la page \og{}US\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
+%
+%
+%
+%watcher & voir les dates de fin de tâches initiales et révisées dans la page \og{}taches\fg{} & \\
+%watcher & que les dates de fin de tâches révisées dans la page \og{}taches\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
+%
+%
+%
+%
+%
+%2.1.4 US
+% création d'user stories ;
+% achage des coûts totaux des tâches (voir : 2.1.5) de chaque US (MAJ
+%auto) ;
+% création d'un statut pour chaque US :
+% not validated (pas encore une exigence) ;
+% validated (exigence, pas encore prête à être executée) ;
+% ready ;
+% doing ;
+% dev done (tests non terminés) ;
+% done.
+% ltrage des US sur statut (par exemple, ne voir que les exigences ou que
+%les US terminées) ;
+% possibilité d'acher facilement la liste des tâches de chaque US (approche
+%hiérarchique ou ensemble) ;
+% possibilité d'acher facilement les dates de début et n de chaque US ;
+% achage de la date estimée de n d'US (voir : 2.1.3) ;
+% génération automatique d'un burn down chart à la n de chaque sprint
+%(voir : 2.1.3).
+%2.1.5 Tâches
+% création de tâches ;
+% ajout des tâches aux US (une tâche peut appartenir à plusieurs US) ;
+% gestion des coûts (suite de bonacci visible pendant le calcul des coûts) ;
+% à chaque modication de coût, MAJ automatique du coût de toutes les
+%US dont dépend la tâche ;
+% possibilité pour tous les contributeurs d'attribuer un développeur à une
+%tâche ;
+% création d'un statut pour chaque tâche :
+% not ready (pas encore prête à être executée) ;
+% ready ;
+% doing ;
+% dev done (tâches codées mais non testées) ;
+% done.
+% ltrage des tâches sur statut ;
+% ltrage des tâches sur dev ;
+% achage de la date estimée de n de tâche (voir : 2.1.3) ;
+% possibilité d'acher facilement la liste des US dont dépend chaque tâches ;
+% possibilité d'accéder au(x) test(s) d'un tâche (lien vers la page de test :
+%voir 2.1.6).
+%2.1.6 Tests
+%Création d'une page  tests  sur laquelle on trouvera 3 catégories :
+% les tests unitaires ;
+% les tests d'intégration ;
+% les tests de validation.
+%Pour chaque test, on pourra visualiser facilement :
+% le nom du développeur ;
+% la date de création ;
+% la date de dernière exécution ;
+% le nom de celui qui a exécuté la dernière fois ;
+% le résultat de la dernière exécution.
+%Il sera également possible de faire apparaître toutes les exécutions avec, pour
+%chacune :
+% dates ;
+% nom du contributeur qui a exécuté ;
+% résultat.
+%2.1.7 Versions
+%Création d'une page  versions  sur laquelle on trouvera l'historique de
+%toutes les versions avec, pour chacune :
+% date ;
+% contenu (US terminées) ;
+% éventuels bugs / problèmes connus (modiable à tout moment par les
+%contributeurs).
+%2.1.8 Développeur
+%Création d'une page  développeur  sur laquelle on retrouvera :
+% les tâches à eectuer / en cours / eectuées ;
+% les tests écrits / développés ;
+% les tests executés ;
+% l'emploi du temps du développeur au cours du projet (théorique et réel).
+%
+%2.1.9 Accessibilité du code
+%Il sera possible de rentrer l'URL du git du projet. À partir de là, à chaque
+%référence au code, on pourra télécharger le / les chier(s) correspondant(s). On
+%retrouvera donc le code dans les pages :
+% US (toute une US) ;
+% tâche (les chiers d'une tâche) ;
+% test (les chiers d'un test) ;
+% version (une version complète) ;
+% développeur (dans la liste des tâches d'un développeur, accès au code de
+%chacune des tâches) ;
+%2.1.10 Outils
+%Création d'une page de type wiki contenant la liste de tous les environnements
+%et outils utilisés et pour chacun :
+% une description de leur utilisation générale ;
+% une description de leur utilisation pour le projet ;
+% un lien de téléchargement ;
+% un tuto d'installations ;
+% un tuto de conguration.
+
+
+
+
+
+
+
+
+%2.2 Spécications non-fonctionnelles
+% légèreté ;
+% accessibilité online ;
+% ergonomie ;
+% garder une trace de chaque changement (état avant modif, date modif,
+%état après modif) :
+% modications statuts (US, tâches, ...) ;
+% changement de dev pour une tâche ;
+% état des tests ;
+% ...
+
+
+
+
+
+
+
+
+
+
+
+\hline
+\end{tabular}
