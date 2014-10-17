@@ -1,10 +1,15 @@
 \chapter{Backlog}
 %à é è " " ê â î ô à
 Droits : contributeurs > watchers > utilisateurs enregistr\'es > visiteur => un watcher \`a au moins les m\^emes droits qu'un visiteur.\\
-\begin{tabular}{|p{4.2cm}|p{5cm}|p{5cm}|}
+\begin{supertabular}{|p{4.5cm}|p{6.5cm}|p{5cm}|}
+
 \hline
 En tant que ... & je souhaite ... & afin de ... \\
+
 \hline
+\multicolumn{3}{|c|}{{\LARGE acc\`es}} \\
+\hline
+
 visiteur & m'enregistrer et me logger & \\
 utilisateur enregistr\'e & modifier mes informations et me d\'econnecter & \\
 utilisateur enregistr\'e & pouvoir contribuer \`a plusieurs projets  & \\
@@ -15,10 +20,20 @@ utilisateur enregistr\'e & demander \`a voir un projet & \^etre accept\'e par un
 contributeur & envoyer une invitation \`a un utilisateur enregistr\'e & lui permettre de valider de de devenir watcher \\
 watcher & voir n'importe quelle information du projet & \\
 visiteur & voir n'importe quelle information d'un projet public & \\
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE projet}} \\
+\hline
+
 utilisateur enregistr\'e & cr\'eer un projet public ou priv\'e & \\
 contributeur & supprimer mon projet & \\
 contributeur & modifier le statut d'un contributeur (d\'eveloppeur, product owner ou scrum master) & d\'efinir des r\^oles au sein du projet \\
 (contributeur & \'eventuellement pouvoir modifier les droits des watchers & maintenir la confidentialit\'e de certaines parties de mon projet) \\
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE organisation - planning}} \\
+\hline
+
 contributeur & cr\'eer un planning des sprints & organiser l'avancement du projet \\
 (contributeur & \'eventuellement disposer d'outils pour faciliter la cr\'eation d'un planning des sprints &) \\
 watcher & afficher le planning des sprints & \\
@@ -41,23 +56,14 @@ contributeur & cr\'eer et mettre manuellement \`a jour n'importe quand un planni
 (contributeur & que le planning r\'eel des versions soit mis \`a jour automatiquement (\`a partir des commits ?) & ) \\
 watcher & afficher le planning r\'eel des versions & \\
 
-
-
-
+\hline
+\multicolumn{3}{|c|}{{\LARGE US}} \\
+\hline
 
 %watcher & voir les dates de fin d'US initiales et révisées dans la page \og{}US\fg{} & \\
 %watcher & que les dates de fin d'US révisées dans la page \og{}US\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
-%
-%
-%
-%watcher & voir les dates de fin de tâches initiales et révisées dans la page \og{}taches\fg{} & \\
-%watcher & que les dates de fin de tâches révisées dans la page \og{}taches\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
-%
-%
-%
-%
-%
-%2.1.4 US
+
+
 % création d'user stories ;
 % achage des coûts totaux des tâches (voir : 2.1.5) de chaque US (MAJ
 %auto) ;
@@ -76,7 +82,14 @@ watcher & afficher le planning r\'eel des versions & \\
 % achage de la date estimée de n d'US (voir : 2.1.3) ;
 % génération automatique d'un burn down chart à la n de chaque sprint
 %(voir : 2.1.3).
-%2.1.5 Tâches
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE t\^aches}} \\
+\hline
+
+%watcher & voir les dates de fin de tâches initiales et révisées dans la page \og{}taches\fg{} & \\
+%watcher & que les dates de fin de tâches révisées dans la page \og{}taches\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
+
 % création de tâches ;
 % ajout des tâches aux US (une tâche peut appartenir à plusieurs US) ;
 % gestion des coûts (suite de bonacci visible pendant le calcul des coûts) ;
@@ -96,7 +109,11 @@ watcher & afficher le planning r\'eel des versions & \\
 % possibilité d'acher facilement la liste des US dont dépend chaque tâches ;
 % possibilité d'accéder au(x) test(s) d'un tâche (lien vers la page de test :
 %voir 2.1.6).
-%2.1.6 Tests
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE tests}} \\
+\hline
+
 %Création d'une page  tests  sur laquelle on trouvera 3 catégories :
 % les tests unitaires ;
 % les tests d'intégration ;
@@ -112,21 +129,33 @@ watcher & afficher le planning r\'eel des versions & \\
 % dates ;
 % nom du contributeur qui a exécuté ;
 % résultat.
-%2.1.7 Versions
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE versions}} \\
+\hline
+
 %Création d'une page  versions  sur laquelle on trouvera l'historique de
 %toutes les versions avec, pour chacune :
 % date ;
 % contenu (US terminées) ;
 % éventuels bugs / problèmes connus (modiable à tout moment par les
 %contributeurs).
-%2.1.8 Développeur
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE d\'eveloppeur}} \\
+\hline
+
 %Création d'une page  développeur  sur laquelle on retrouvera :
 % les tâches à eectuer / en cours / eectuées ;
 % les tests écrits / développés ;
 % les tests executés ;
 % l'emploi du temps du développeur au cours du projet (théorique et réel).
 %
-%2.1.9 Accessibilité du code
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE accessibilit\'e du code}} \\
+\hline
+
 %Il sera possible de rentrer l'URL du git du projet. À partir de là, à chaque
 %référence au code, on pourra télécharger le / les chier(s) correspondant(s). On
 %retrouvera donc le code dans les pages :
@@ -136,21 +165,20 @@ watcher & afficher le planning r\'eel des versions & \\
 % version (une version complète) ;
 % développeur (dans la liste des tâches d'un développeur, accès au code de
 %chacune des tâches) ;
-%2.1.10 Outils
-%Création d'une page de type wiki contenant la liste de tous les environnements
-%et outils utilisés et pour chacun :
-% une description de leur utilisation générale ;
-% une description de leur utilisation pour le projet ;
-% un lien de téléchargement ;
-% un tuto d'installations ;
-% un tuto de conguration.
+
+\hline
+\multicolumn{3}{|c|}{{\LARGE outils}} \\
+\hline
+
+watcher & afficher un wiki contenant contenant la liste de tous les environnements et outils utilisés & connaître leurs description générale, description dans le projet, lien, tutos d'installation et de configuration \\
+contributeur & modifier le wiki des outils du projet & les mettre à jour \\
 
 
 
 
 
 
-
+%%%%%%%%%%%% non fonctionnels : pas vraiment des US
 
 %2.2 Spécications non-fonctionnelles
 % légèreté ;
@@ -174,4 +202,4 @@ watcher & afficher le planning r\'eel des versions & \\
 
 
 \hline
-\end{tabular}
+\end{supertabular}
