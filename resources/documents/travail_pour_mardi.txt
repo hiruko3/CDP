@@ -1,0 +1,9 @@
+minimum :
+0/ définir PO / SM
+1/ retravailler les US
+2/a. PO : fixer prios
+2/b. fixer coûts
+3/ SM : planning des sprints
+
+commencer :
+4/sprint 0 (architecture, installation environnement

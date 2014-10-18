@@ -1,5 +1,4 @@
-\chapter{Backlog}
-%à é è " " ê â î ô à
+\chapter{Backlog (78 US)}
 Droits : contributeurs > watchers > utilisateurs enregistr\'es > visiteur => un watcher \`a au moins les m\^emes droits qu'un visiteur.\\
 \begin{supertabular}{|p{4.5cm}|p{6.5cm}|p{5cm}|}
 
@@ -55,151 +54,84 @@ watcher & afficher le planning th\'eorique des versions & \\
 contributeur & cr\'eer et mettre manuellement \`a jour n'importe quand un planning r\'eel des versions & \\
 (contributeur & que le planning r\'eel des versions soit mis \`a jour automatiquement (\`a partir des commits ?) & ) \\
 watcher & afficher le planning r\'eel des versions & \\
+watcher & voir un burn down chart g\'en\'er\'e automatiquement \`a la fin de chaque sprint & \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE US}} \\
 \hline
 
-%watcher & voir les dates de fin d'US initiales et révisées dans la page \og{}US\fg{} & \\
-%watcher & que les dates de fin d'US révisées dans la page \og{}US\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
-
-
-% création d'user stories ;
-% achage des coûts totaux des tâches (voir : 2.1.5) de chaque US (MAJ
-%auto) ;
-% création d'un statut pour chaque US :
-% not validated (pas encore une exigence) ;
-% validated (exigence, pas encore prête à être executée) ;
-% ready ;
-% doing ;
-% dev done (tests non terminés) ;
-% done.
-% ltrage des US sur statut (par exemple, ne voir que les exigences ou que
-%les US terminées) ;
-% possibilité d'acher facilement la liste des tâches de chaque US (approche
-%hiérarchique ou ensemble) ;
-% possibilité d'acher facilement les dates de début et n de chaque US ;
-% achage de la date estimée de n d'US (voir : 2.1.3) ;
-% génération automatique d'un burn down chart à la n de chaque sprint
-%(voir : 2.1.3).
+contributeur & cr\'eer une US & \\
+contributeur & supprimer une US & \\
+watcher & afficher le co\^ut total d'une US (MAJ auto) & \\
+contributeur & modifier le statut d'une US (MAJ auto via t\^aches ou GIT ??) & \\
+watcher & voir le statut d'une US (not validated, validated, ready, doing, dev done, done) & \\
+contributeur & modifier la priorit\'e d'une t\^ache & \\
+watcher &  filtrer les US par statut & \\
+watcher & voir la liste des t\^aches d'une US (approche hi\'erarchique) & \\
+watcher & voir les dates de d\'ebut et fin d'une US termit\'ee & \\
+watcher & voir la date de fin estim\'ee d'une US non done & \\
+watcher & voir la date de d\'ebut estim\'ee d'une US non doing & \\
+watcher & que les dates de fin d'US r\'evis\'ees dans la page \og{}US\fg{} soient automatiquement mises \`a jour en fonction de l'avanc\'ee du PERT r\'eel & \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE t\^aches}} \\
 \hline
 
-%watcher & voir les dates de fin de tâches initiales et révisées dans la page \og{}taches\fg{} & \\
-%watcher & que les dates de fin de tâches révisées dans la page \og{}taches\fg{} soient automatiquement mises à jour en fonction de l'avancée du PERT réel & \\
-
-% création de tâches ;
-% ajout des tâches aux US (une tâche peut appartenir à plusieurs US) ;
-% gestion des coûts (suite de bonacci visible pendant le calcul des coûts) ;
-% à chaque modication de coût, MAJ automatique du coût de toutes les
-%US dont dépend la tâche ;
-% possibilité pour tous les contributeurs d'attribuer un développeur à une
-%tâche ;
-% création d'un statut pour chaque tâche :
-% not ready (pas encore prête à être executée) ;
-% ready ;
-% doing ;
-% dev done (tâches codées mais non testées) ;
-% done.
-% ltrage des tâches sur statut ;
-% ltrage des tâches sur dev ;
-% achage de la date estimée de n de tâche (voir : 2.1.3) ;
-% possibilité d'acher facilement la liste des US dont dépend chaque tâches ;
-% possibilité d'accéder au(x) test(s) d'un tâche (lien vers la page de test :
-%voir 2.1.6).
+watcher & avoir acc\`es \`a une page \og{}t\^aches\fg{} dans laquelle je trouverais la liste des t\^aches et leurs co\^uts & \\
+watcher & voir la liste des t\^aches (approche hi\'erarchique ou ensemble) & \\
+contributeur & cr\'eer une nouvelle t\^ache & \\
+contributeur & supprimer une t\^ache & \\
+contributeur & ajouter des t\^aches aux US (une t\^ache peut appartenir \`a plusieurs US) & \\
+contributeur & modifier le co\^ut d'une t\^ache & \\
+contributeur & voir la suite de fibonacci pendant le calcul du co\^ut d'une t\^ache & \\
+watcher & que chaque modification de co\^ut d'une t\^ache se r\'epercute automatiquement sur toutes les US qui en d\'ependent & \\
+contributeur & attribuer un contributeur \`a une t\^ache \`a tout moment & \\
+contributeur & modifier le statut d'une t\^ache (MAJ auto via GIT ??) & \\
+watcher & voir le statut d'un t\^ache (not ready, ready, doing, dev done ou done) ; & afin de conna\^itre son \'etat d'avancement \\
+watcher & filtrer les t\^aches par statut & \\
+watcher & filtrer les t\^aches par d\'eveloppeur & \\
+watcher & voir les dates de fin de t\^aches initiales et r\'evis\'ees dans la page \og{}taches\fg{} & \\
+watcher & que les dates de fin de t\^aches r\'evis\'ees dans la page \og{}taches\fg{} soient automatiquement mises \`a jour en fonction de l'avanc\'ee du PERT r\'eel & \\
+watcher & acc\'eder facilement \`a la liste des US d\'ependant d'une t\^ache & \\
+watcher & voir le(s) test(s) en rapport avec une t\^ache (lien vers la page \og{}test\fg{} & \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE tests}} \\
 \hline
 
-%Création d'une page  tests  sur laquelle on trouvera 3 catégories :
-% les tests unitaires ;
-% les tests d'intégration ;
-% les tests de validation.
-%Pour chaque test, on pourra visualiser facilement :
-% le nom du développeur ;
-% la date de création ;
-% la date de dernière exécution ;
-% le nom de celui qui a exécuté la dernière fois ;
-% le résultat de la dernière exécution.
-%Il sera également possible de faire apparaître toutes les exécutions avec, pour
-%chacune :
-% dates ;
-% nom du contributeur qui a exécuté ;
-% résultat.
+contributeur & pouvoir modifier la page de tests \`a tout moment & \\
+watcher & avoir acc\`es \`a une page \og{}tests\fg{} regroupant les tests par cat\'egorie (unitaires, int\'egration et validation) & \\
+watcher & pour chaque test, voir facilement le dev, la date de cr\'eation, la date de derni\`ere ex\'ecution, le nom de celui qui a ex\'ecut\'e la derni\`ere fois et le r\'esultat de la derni\`ere ex\'ecution & \\
+watcher & pour chaque ex\'ecution de chaque test, pouvoir acc\'eder \`a la date, le nom du contributeur qui a ex\'ecut\'e, au r\'esultat & \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE versions}} \\
 \hline
 
-%Création d'une page  versions  sur laquelle on trouvera l'historique de
-%toutes les versions avec, pour chacune :
-% date ;
-% contenu (US terminées) ;
-% éventuels bugs / problèmes connus (modiable à tout moment par les
-%contributeurs).
+contributeur & avoir acc\`es \`a une page \og{}versions\fg{} que je pourrais modifier \`a tout moment & d\'eposer une nouvelle version (d\'enomination, date, contenu [US termin\'ees], \'eventuels bugs / probl\`emes connus \\
+contributeur & pouvoir modifier \`a tout moment la liste des \'eventuels bugs / probl\`emes connus & la mettre \`a jour \\
+watcher & avoir acc\`es \`a une page \og{}versions\fg{} & conna\^itre toutes les informations sur les version \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE d\'eveloppeur}} \\
 \hline
 
-%Création d'une page  développeur  sur laquelle on retrouvera :
-% les tâches à eectuer / en cours / eectuées ;
-% les tests écrits / développés ;
-% les tests executés ;
-% l'emploi du temps du développeur au cours du projet (théorique et réel).
-%
+contributeur & avoir une page \`a mon nom regroupant mon emploi du temps (th\'eorique et r\'eel), mes tests (\'ecrits, d\'evelopp\'es et ex\'ecut\'es) et mes t\^aches (futures, en cours et termin\'ees)  & \\
+watcher & voir la page d'un contributeur & conna\^itre son travail dans le projet \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE accessibilit\'e du code}} \\
 \hline
 
-%Il sera possible de rentrer l'URL du git du projet. À partir de là, à chaque
-%référence au code, on pourra télécharger le / les chier(s) correspondant(s). On
-%retrouvera donc le code dans les pages :
-% US (toute une US) ;
-% tâche (les chiers d'une tâche) ;
-% test (les chiers d'un test) ;
-% version (une version complète) ;
-% développeur (dans la liste des tâches d'un développeur, accès au code de
-%chacune des tâches) ;
+contributeur & entrer l'URL du git du projet & cr\'eer un lien entre l'environnement et le code \\
+watcher & pouvoir t\'el\'echarger le code par US, t\^ache(s), test(s), version(s), d\'eveloppeur(s) et projet complet lorsque je suis sur les pages correspondantes & \\
 
 \hline
 \multicolumn{3}{|c|}{{\LARGE outils}} \\
 \hline
 
-watcher & afficher un wiki contenant contenant la liste de tous les environnements et outils utilisés & connaître leurs description générale, description dans le projet, lien, tutos d'installation et de configuration \\
-contributeur & modifier le wiki des outils du projet & les mettre à jour \\
-
-
-
-
-
-
-%%%%%%%%%%%% non fonctionnels : pas vraiment des US
-
-%2.2 Spécications non-fonctionnelles
-% légèreté ;
-% accessibilité online ;
-% ergonomie ;
-% garder une trace de chaque changement (état avant modif, date modif,
-%état après modif) :
-% modications statuts (US, tâches, ...) ;
-% changement de dev pour une tâche ;
-% état des tests ;
-% ...
-
-
-
-
-
-
-
-
-
-
+watcher & afficher un wiki contenant contenant la liste de tous les environnements et outils utilis\'es & conna\^itre leurs description g\'en\'erale, description dans le projet, lien, tutos d'installation et de configuration \\
+contributeur & modifier le wiki des outils du projet & les mettre \`a jour \\
 
 \hline
 \end{supertabular}
